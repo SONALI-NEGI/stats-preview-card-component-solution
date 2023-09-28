@@ -30,7 +30,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://github.com/SONALI-NEGI/stats-preview-card-component-solution.git]
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [https://sonali-negi.github.io/stats-preview-card-component-solution/]
 
 ## My process
 
