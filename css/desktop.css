@@ -77,7 +77,7 @@ body {
 }
 
 .image {
-  background-image: url(images/image-header-desktop.jpg);
+  background-image: url(/images/image-header-desktop.jpg);
   background-size: cover;
   height: 100%;
   opacity: 0.5;
