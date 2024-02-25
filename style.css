@@ -1,0 +1,118 @@
+:root {
+  --primary-main-background: hsl(233, 47%, 7%);
+  --primary-card-background: hsl(244, 38%, 16%);
+  --primary-accent: hsl(277, 64%, 61%);
+  --neutral-main-heading: hsl(0, 0%, 100%);
+  --neutral-main-paragraph: hsla(0, 0%, 100%, 0.75);
+  --neutral-stat-headings: hsla(0, 0%, 100%, 0.6);
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: var(--primary-main-background);
+  color: var(--neutral-main-heading);
+  font-family: "Inter", sans-serif;
+  text-align: center;
+}
+.card {
+  background-color: var(--primary-card-background);
+  margin: 2rem;
+  border-radius: 1rem;
+}
+.card__img {
+  background-color: var(--primary-accent);
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+img {
+  width: 100%;
+  height: auto;
+  mix-blend-mode: multiply;
+  opacity: 0.8;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+.card__content {
+  padding: 0.5rem 1rem;
+}
+.business-insights__heading {
+  font-size: 1.6rem;
+  font-size: 700;
+}
+.business-insights__accent {
+  color: var(--primary-accent);
+}
+.business-insights__paragraph {
+  font-size: 1rem;
+  color: var(--neutral-main-paragraph);
+}
+.card-stats {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+.card-stats li {
+  margin: 0.7rem;
+}
+.card-stats__number {
+  font-size: 1.2rem;
+  margin: 0;
+  font-weight: 900;
+}
+.card-stats__name {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  color: var(--neutral-stat-headings);
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 900px) {
+  main {
+    display: grid;
+    place-items: center;
+    height: 95vh;
+  }
+  .card {
+    max-width: 70%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin: auto;
+    /* center card */
+  }
+  .card__img {
+    border-top-left-radius: 0;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+  }
+  img {
+    height: 100%;
+    border-top-left-radius: 0;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+  }
+  .card__content {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: space-evenly;
+    padding: 1.5rem 3rem 2rem 2rem;
+    text-align: start;
+  }
+  .business-insights__heading {
+    font-size: 2.3rem;
+  }
+  .card-stats {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
